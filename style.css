@@ -226,6 +226,12 @@ padding-left: 15%;
 }
 .presentjs{
     width: 90%;
+    margin-right:10%;
+}
+
+.presentrjs{
+    margin-right:35%;
+    width: 65%;
 }
 
 .bar{
