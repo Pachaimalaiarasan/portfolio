@@ -1,0 +1,429 @@
+@media(min-width:100px) and (min-height:100px){
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 5%;
+    align-items: center;
+    background-color: black;
+    min-height:fit-content;
+    max-width:fit-content;
+    color: rgb(94, 174, 228);
+    font-size: 0.80rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h3{
+    font-size: 0.50rem;
+}
+
+/*   variable  */
+
+:root{
+
+    /*  color  */
+--COLOR :rgb(94, 174, 228);
+--HOME-NAME-CO:white;
+--ABOUT-BA-CO:rgb(12, 11, 11);
+--BAR-CO:white;
+
+/*  FONT */
+--SIZE:1rem;
+--HOME-NAME:1.75rem;
+
+/* IMAGE SIZE */
+--IMG-WI:25%;
+--IMG-HI:25%;
+--IMG-BR:40px;
+
+/* */
+
+}
+
+
+/*  HOME PAGE  */
+
+/*  NAV DESIGN  */
+
+h2{
+   text-align: center;
+   padding: 2%;
+   padding-bottom: 0%;
+   font-size: xx-large;
+    }
+    nav{
+        display: none;
+        position: fixed;
+        width: 100%;
+        background-color:var(--COLOR) ;
+        top:2px;
+        padding: 2px;
+        border-radius: 15px;
+        z-index: 5;
+    
+    }
+    
+    a{
+        text-decoration: none;
+       padding: 10px;
+        color: black;
+    }
+    li{
+        display:inline;
+        margin-left: 9%;
+    
+    }
+/* IMAGE & CONTENT DESIGN  */
+
+.homepro{
+    margin: 0% 35% 0% 38%;
+    width:var(--IMG-WI);
+    height: var(--IMG-HI);
+    border-radius: var(--IMG-BR);
+    
+
+}
+/* CONTENT */
+
+.home-section{
+    padding-top: 5%;
+    font-size: var(--SIZE);
+   min-width: 100%;
+    min-height: 50%;
+    border-radius: 20px;
+    padding-bottom: 4%;
+}
+h3{
+    font-size: var(--HOME-NAME);
+    color:var(--HOME-NAME-CO);   /*home profile name style  */
+}
+.text-align{
+    text-align: center;
+}
+
+/*  ABOUT SECTION DESIGN  */
+
+.aboutsec{
+    border-radius: 20px;
+    background-color:var(--ABOUT-BA-CO) ;
+    padding-bottom:10% ;
+    min-width: 100%;
+    min-height: 50%;
+}
+.aboutpro{
+    display:inline-block;
+    width: var(--IMG-WI);
+    height: var(--IMG-HI);
+    padding: 5px 2px 5px 4px;
+    border-radius:var(--IMG-BR);
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+.aboutusdisplay{ 
+padding: 5% 0% 0% 3%;
+margin-top: -36%;
+margin-bottom: 1%;
+margin-left: 30%;
+}
+.detail{
+margin-left: 35%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    gap: 5%;
+
+}
+.text-align1{
+   margin: 0% 0% 1% 33%;
+}
+.text-align2{
+margin: 0% 0% 3% 33%;
+color: var(--BAR-CO);
+}
+
+.span1,.span2{
+    color: var(--HOME-NAME-CO);
+    padding-left: 8px;
+}
+
+/* EDUCATION SECTION DESIGN */
+.educationsection{
+    min-width: 100%;
+    min-height: 50%;
+}   
+.educationsec1,.educationsec2{
+    margin-top: 5%;
+     margin-bottom: 2%;
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+
+}  
+ 
+.school,.college,.work1,.work2{
+    background-color: var(--ABOUT-BA-CO);
+    width: 35%;
+    text-align: center;
+    border-radius: 20px;
+}
+.educationse-span1,.work-span1{
+    color: var(--BAR-CO);
+}
+
+/*   skill MENU DESIGN  */
+
+.skillsection{
+display: flex;
+justify-content: space-between;
+flex-flow: column;
+padding:8%;
+padding-left: 15%;
+}
+
+.skilldisplay{
+    text-align: center;
+
+}
+
+.htmlsec,.csssec,.reactsec,.jssec{
+    display: flex;
+    width: 80%;
+    padding: 1%;
+    justify-content: space-evenly;
+    align-items: center;                /*HTML SKILL BAR AND SECTION */
+    background-color: var(--ABOUT-BA-CO);
+    border-radius: 20px;
+    margin: 1%;
+}
+.bar1{
+    margin-left: 11%;                  /*html bar heading space */
+}
+.bar2{
+    margin-left: 13%;   /*css bar heading space */
+}
+.bar3{
+    margin-left: 1%;    /*js bar heading space */
+}
+.bar4{
+    margin-left: 5%;    /*rjs bar heading space */
+}
+
+.presenthtml,.presentcss,.presentjs,.presentrjs{
+    background-color:var(--COLOR);
+    
+    border-radius: 20px;
+}
+.presenthtml{
+    width: 93%;
+    margin-right:7%;
+}
+.presentcss{
+    width: 95%;
+    margin-right:5%;
+}
+.presentjs,.presentrjs{
+    width: 0%;
+}
+
+.bar{
+    display: flex;
+    border-radius: 20px;
+    width: 60%;
+    height:10px;
+    background-color:var(--BAR-CO);      /* ALL SCETION BAR DESIGN */
+    justify-content:center;
+    align-content: center;
+    margin-right: 1%;
+}
+
+
+/*  HOVER BER SECTION  */
+:is(.presenthtml:hover,.presentcss:hover,.presentjs:hover,.presentrjs:hover){
+animation-name: persentage;
+animation-duration: 3s;
+animation-timing-function:linear;
+transform-origin:left;
+transition: all;
+}
+@keyframes persentage{
+    1%{                             /* ANIMATION OF BAR PRESENTAGE */
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+                /*  MY SERVICE PAGE DESIGN  */
+                
+.servicesce{
+    min-height: 50%;
+    margin-top: 5%;
+    background-color: var(--ABOUT-BA-CO);
+    border-radius: 20px;
+    padding-bottom: 6%;
+   
+} 
+.flexsec{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}               
+.sevdisplay{
+    padding: 3% 0% 3% 0%;
+text-align: center;
+position: relative;
+}
+
+.service{
+    display: grid;
+    grid-template-rows:max-content;
+    gap: 12px;
+width:50%;
+height: 25%;
+
+}
+.service1,.service2,.service3,.service4,.service5,.service6{
+    width: 100%;
+    padding: 5%;
+    background-color: black;
+    text-align: left;
+    border-radius: 20px;
+}
+
+
+/* CLIENT SAYS SSECTION OR PAGE DESIGN */
+
+.clientsec1{
+    min-height: 50%;
+    width:70vw;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: nowrap;
+    flex-flow: column;
+    gap: 4%;
+    margin-left: 15%;
+    border-radius: var(--IMG-BR);
+    padding-left: 10%;
+    
+}
+
+.client1,.client2,.client3{
+    display:block;
+    gap: 4%;
+    justify-content: space-evenly;
+    width:50vw;
+    text-align: center;
+    align-items: center;
+    background-color: var(--ABOUT-BA-CO);
+    margin-top: 5%;
+    border-radius: var(--IMG-BR);
+
+}
+.clientimg{
+    border-radius: var(--IMG-BR);
+    width: 40%;
+    height: 40%;
+}
+.client-text1{
+    padding-right: 0%;
+}
+.client-text2{
+    color: var(--HOME-NAME-CO);
+}
+.clientdisplay{
+    text-align: center;
+    padding: 3%;
+    padding-bottom: 0%;
+}
+/* PORTFOLIO SECTION OR DESIGN */
+
+.portfoliosec{
+
+    display: block;
+    text-align: center;
+    align-items: center;
+    width:70vw;
+    height: 75%;
+    padding: 0% 0% 0% 10%;
+
+}
+.portdisplay{
+    text-align: center;
+    padding:5% 0% 3% 0%;
+}
+.portimg1,.portimg2,.portimg3,.portimg4,.portimg5,.portimg6{
+  
+    border-radius: 10px;
+}
+
+/*   FEEDBACK FORM PAGE OR SECTION DESIGN  */
+
+.feedbacksec{
+min-width: fit-content;
+    padding: 10% 10% 5% 10%;
+    background-color: var(--ABOUT-BA-CO);
+    border-radius: 20px;
+}
+
+.feeddisplay{
+    padding: 0% 0% 2% 0%;
+    margin: 0% 0% 2% 0%;
+    text-align: center;
+}
+
+.fill{
+    width: 50%;
+    border-radius: 20px;
+    display: inline-block;      /* INPUT BOXS DESIGN */
+    padding: 1% 2% 1% 2%;
+    margin: 0% 0% 2% 22%;
+
+}
+.fill1{
+    padding-bottom: 5%;  /* FEEDBACK INPUT BOX DESIGN */
+}
+.submit{
+    width: 50%;
+    display:block;
+    text-align: center;         /* BUTTON DESIGN */
+    padding: 1% 2% 1% 2%;
+    margin: 0% 0% 2% 24%;
+    background-color: var(--COLOR);
+    border-radius: 20px;
+
+}
+/* FOOTER SECTION OR PAGE DESIGN */
+
+.footersec{
+    min-width:fit-content;
+    min-height:50%;
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.footersec1{
+    padding: 2%;
+    background-color: var(--ABOUT-BA-CO);
+    width: 75%;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.foot-text{
+    font-size:80%;
+    text-align: center;
+}
+.h4sec{
+    color: var(--BAR-CO);
+}
+
+}
+/* media key using for responceive web site */
